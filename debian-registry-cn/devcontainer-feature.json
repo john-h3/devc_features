@@ -1,0 +1,21 @@
+{
+    "id": "debian-registry-cn",
+    "version": "1.0.0",
+    "name": "Debian China Mirror",
+    "description": "Switch Debian's APT registry to a China-based mirror.",
+    "options": {
+        "mirror": {
+            "type": "string",
+            "enum": [
+                "tsinghua",
+                "ustc",
+                "aliyun"
+            ],
+            "default": "ustc",
+            "description": "Select the mirror to use: Tsinghua, USTC, or Aliyun."
+        }
+    },
+    "install": {
+        "script": "install.sh"
+    }
+}
