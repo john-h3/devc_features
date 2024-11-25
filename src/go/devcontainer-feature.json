@@ -1,10 +1,10 @@
 {
     "id": "go",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "Go Installation",
     "description": "This feature installs the latest stable version of Go from go.dev.",
     "installsAfter": [
-      "ghcr.io/john-h3/devc_features/basic-tools"
+        "ghcr.io/john-h3/devc_features/basic-tools"
     ],
     "customizations": {
         "vscode": {
@@ -12,6 +12,31 @@
                 "golang.Go"
             ]
         }
+    },
+    "options": {
+        "mirror": {
+            "type": "string",
+            "enum": [
+                "ustc",
+                "aliyun",
+                "nju"
+            ],
+            "default": "ustc",
+            "description": "Select the mirror to use: USTC, NJU, or Aliyun."
+        },
+        "arch": {
+            "type": "string",
+            "enum": [
+                "amd64",
+                "arm64"
+            ],
+            "default": "amd64",
+            "description": "Select the architecture to use: amd64 or arm64."
+        },
+        "version": {
+            "type": "string",
+            "default": "1.23.3",
+            "description": "Specify the Go version to install (e.g., '1.23.3')."
+        }
     }
-  }
-  
+}
