@@ -11,7 +11,13 @@ This feature installs the latest stable version of Go from go.dev.
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| mirror | Select the mirror to use: USTC, NJU, or Aliyun. | string | ustc |
+| arch | Select the architecture to use: amd64 or arm64. | string | amd64 |
+| version | Specify the Go version to install (e.g., '1.23.3'). | string | 1.23.3 |
 
 ## Customizations
 
