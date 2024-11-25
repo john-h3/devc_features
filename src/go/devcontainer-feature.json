@@ -1,0 +1,17 @@
+{
+    "id": "go",
+    "version": "1.0.0",
+    "name": "Go Installation",
+    "description": "This feature installs the latest stable version of Go from go.dev.",
+    "installsAfter": [
+      "ghcr.io/john-h3/devc_features/basic-tools"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.Go"
+            ]
+        }
+    }
+  }
+  

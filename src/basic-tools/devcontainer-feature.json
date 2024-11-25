@@ -1,0 +1,25 @@
+{
+    "id": "basic-tools",
+    "version": "1.0.0",
+    "name": "Basic Tools Installer",
+    "description": "Installs basic tools like curl, git, and vim in the container.",
+    "options": {
+    //   "installGit": {
+    //     "type": "boolean",
+    //     "default": true,
+    //     "description": "Install Git"
+    //   },
+      "installCurl": {
+        "type": "boolean",
+        "default": true,
+        "description": "Install Curl"
+      },
+    //   "installVim": {
+    //     "type": "boolean",
+    //     "default": true,
+    //     "description": "Install Vim"
+    //   }
+    },
+    "installsAfter": ["ghcr.io/john-h3/devc_features/debian-registry-cn"]
+  }
+  
