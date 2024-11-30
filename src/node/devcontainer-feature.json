@@ -1,0 +1,51 @@
+{
+    "id": "node",
+    "version": "1.0.0",
+    "name": "Node.js (via nvm), yarn and pnpm",
+    "documentationURL": "https://github.com/devcontainers/features/tree/main/src/node",
+    "description": "Installs Node.js, nvm, yarn, pnpm, and needed dependencies.",
+    "options": {
+       "nodeMirror": {
+            "type": "string",
+            "enum": [
+                "tsinghua",
+                "ustc",
+                "aliyun",
+                "nju"
+            ],
+            "default": "nju",
+            "description": "Select the mirror to use: Nju, Tsinghua, USTC, or Aliyun."
+        },
+        "nodeVersion": {
+            "type": "string",
+            "enum": [
+                "lts",
+                "latest",
+                "none",
+                "18",
+                "16",
+                "14"
+            ],
+            "default": "lts",
+            "description": "Select or enter a Node.js version to install"
+        },
+        "npmMirror": {
+           "type": "string",
+            "enum": [
+                "ustc",
+                "aliyun",
+                "nju",
+                "tencent"
+            ],
+            "default": "tencent",
+            "description": "Select the mirror to use: Nju, Tencent, USTC, or Aliyun." 
+        }
+    },
+    "containerEnv": {
+        "NVM_DIR": "/usr/local/share/nvm",
+        "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/john-h3/devc_features/basic-tools"
+    ]
+}
