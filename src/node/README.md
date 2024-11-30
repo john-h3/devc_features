@@ -15,6 +15,7 @@ Installs Node.js, nvm, yarn, pnpm, and needed dependencies.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
+| ghProxy | 使用 ghproxy 来下载 github 资源，置空则不使用 | string | - |
 | nodeMirror | Select the mirror to use: Nju, Tsinghua, USTC, or Aliyun. | string | nju |
 | nodeVersion | Select or enter a Node.js version to install | string | lts |
 | npmMirror | Select the mirror to use: Nju, Tencent, USTC, or Aliyun. | string | tencent |
